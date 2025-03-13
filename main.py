@@ -18,7 +18,7 @@ app = FastAPI()
 app.include_router(auth.router)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000",'http://192.168.0.102:3000'],  # Your React app's URL
+    allow_origins=["http://localhost:3000",'http://192.168.0.102:3000',"https://react-jwt-auth-frontend.vercel.app"],  # Your React app's URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
